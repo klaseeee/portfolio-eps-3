@@ -1,0 +1,20 @@
+@use 'index';
+
+.container__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  
+  &-link {
+    z-index: 5;
+    a {
+      display: inline-block;
+      padding: .3rem 1rem;
+      color: index.$text-color;
+      cursor: pointer;
+      display: inline-block;
+      font-size: index.$h3-font-size;
+    }
+  }
+}

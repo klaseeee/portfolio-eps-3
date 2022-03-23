@@ -1,0 +1,31 @@
+@use 'index';
+
+@media screen and (min-width: 320px) {
+  main::after {
+    left: 200px;
+  }
+  
+  .container {
+    padding: 0 1rem;
+  }
+
+  .container__nav-link {
+    display: none;
+  }
+
+  .container__about {
+    grid-template-columns: repeat(1, 1fr);
+    .about-left__header{
+      h2 {
+        font-size: index.$normal-font-size;
+      }
+      h1 {
+        font-size: index.$biggest-font-size;
+      }
+      &:after {
+        left: 1rem;
+        top: 17rem;
+      }
+    }
+  }
+}
